@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div style="display: flex;">
+        <form class="border" style="padding: 10px; width: 500px; height: 700px;" id="login">
+            <h1 style="text-align: center;">Login</h1>
+            <label for="lusername">Username:</label>
+            <input class="boxes" id="lusername" type="text"><br>
+            <label for="lpass">Password:</label>
+            <input class="boxes" id="lpass" type="password"><br>
+            <button style="margin-left: 40%; margin-top: 5px; margin-bottom: 5px;" onclick="login()">Login</button><br>
+            <a href="#signup">Sign up</a>
+            <a href="#forgotpass">Forgot Password</a>
+        </form>
+    </div>
+    <div style="display: flex;">
+        <form class="border" style="padding: 10px; width: 500px; height: 700px;" id="forgotpass">
+            <h1 style="text-align: center;">Forgot Password</h1>
+            <label for="fusername">Username:</label>
+            <input class="boxes" id="fusername" type="text"><br>
+            <label for="fpass">New Password:</label>
+            <input class="boxes" id="fpass" type="text"><br>
+            <button style="margin-left: 40%; margin-top: 5px;" onclick="forgotpass()">Confirm</button>
+        </form>
+    </div>
+    <div style="display: flex;">
+        <form class="border" style="padding: 10px; width: 500px; height: 700px;" id="signup">
+            <h1 style="text-align: center;">Sign up</h1>
+            <label for="susername">Username:</label>
+            <input class="boxes" id="susername" type="text"><br>
+            <label for="spassword">Password:</label>
+            <input class="boxes" id="spassword" type="password"><br>
+            <label for="sphonenumber">Phone number:</label>
+            <input class="boxes" id="sphonenumber" type="text"><br>
+            <label for="sage">Age:</label>
+            <input class="boxes" id="sage" type="number"><br>
+            <label for="sgenderdiv">Gender:</label>
+            <div id="sgenderdiv">
+                <input class="boxes" name="sgender" type="radio" id="m" value="Male">
+                <label for="m">Male</label><br>
+                <input class="boxes" name="sgender" type="radio" id="f" value="Female">
+                <label for="f">Female</label><br>
+            </div>
+            <button style="margin-left: 40%; margin-top: 5px;" onclick="signup()">Sign up</button>
+        </form>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>

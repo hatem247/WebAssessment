@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <a href="Chart.html" style="padding-left: 0px; padding-right: 0px; border: 0px;">
+        <img class="icon" src="1.jpg" alt="chart">
+    </a>
+    <header>
+        <h1>E-Commerce web Application</h1>
+        <table style="margin-left: 40%; box-shadow: 5px 5px 5px black;">
+            <tr>
+                <th><button onclick="first()" style="margin-right: 20px;">Clothes</button></th>
+                <th><button onclick="second()" style="margin-right: 20px;">Shoes</button></th>
+                <th><button onclick="third()" style="margin-right: 20px;">Bags</button></th>
+                <th><button onclick="forth()">Watches</button></th>
+            </tr>
+        </table>
+    </header>
+    <div class="slider">
+        <div id="Clothessliderblock" style="width: 2000px;">
+            <div class="slideritem">
+                <img src="s1.png" id="first">
+                <p class="text">Clothes1</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+            <div class="slideritem">
+                <img src="s2.png" id="second">
+                <p class="text">Clothes2</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+        </div>
+        <div id="Shoessliderblock">
+            <div class="slideritem">
+                <img src="s2.png" id="first">
+                <p class="text">shoes1</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+            <div class="slideritem">
+                <img src="s1.png" id="second">
+                <p class="text">Shoes2</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+        </div>
+        <div id="Bagssliderblock">
+            <div class="slideritem">
+                <img src="s1.png" id="first">
+                <p class="text">Bags1</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+            <div class="slideritem">
+                <img src="s2.png" id="second">
+                <p class="text">Bags2</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+        </div>
+        <div id="Watchessliderblock">
+            <div class="slideritem">
+                <img src="s2.png" id="first">
+                <p class="text">Watches1</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+            <div class="slideritem">
+                <img src="s1.png" id="second">
+                <p class="text">Watches2</p>
+                <button onclick="nav()">Buy now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="border" style="display: flex;padding-left: 20%;">
+            <div style="display: flex;">
+                <label for="barnch">Branches:</label>
+                <p id="barnch">October, Maadi, Cairo, Giza</p>
+            </div>
+            <div style="display: flex; margin-left: 50px;">
+                <label for="contacts">Contacts:</label>
+                <pre id="contacts">
+    Phone: 01148207363
+    Email: hatemmedhat247@gmail.com
+    Facebook: Hatem Medhat
+    insta: hatem_rap7
+                </pre>
+            </div>
+            <div style="display: flex; margin-left: 20px;">
+                <label for="accounts">Accounts:</label>
+                <pre id="accounts">
+    Insta: e_commerce
+    Facebook: E-Commerce
+    Whatsapp: 01022110886
+    Telegram: E Commerce
+                </pre>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="Script.js"></script>
+</html>

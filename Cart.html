@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body style="border: 2px solid black;">
+    <header style="border: 0px;">
+        <h1>E-Commerce web Application</h1>
+        <table style="margin-left: 40%; box-shadow: 5px 5px 5px black;">
+            <tr>
+                <th><button onclick="first()" style="margin-right: 20px;">Clothes</button></th>
+                <th><button onclick="second()" style="margin-right: 20px;">Shoes</button></th>
+                <th><button onclick="third()" style="margin-right: 20px;">Bags</button></th>
+                <th><button onclick="forth()">Watches</button></th>
+            </tr>
+        </table>
+    </header>
+    <h1 style="font-weight: bold; text-align: center; font-size: 40px;">Shopping Cart</h1>
+    <div style="display: flex;">
+        <div>
+            <div style="display: flex; border: 2px solid black;">
+                <button class="x" onclick="document.getElementById('des1').style.textDecoration='line-through'">X</button>
+                <img class="carti" src="p1.png" alt="">
+                <div>
+                    <p id="des1">Hoodie With Pouch Packet</p>
+                    <p>Mini/s</p>
+                </div>
+                <input type="number" placeholder="Quantity" id="q1" class="qub">
+                <p class="qub">75$</p>
+            </div>
+            <div style="display: flex; border: 2px solid black;">
+                <button class="x" onclick="document.getElementById('des2').style.textDecoration='line-through'">X</button>
+                <img class="carti" src="p2.png" alt="">
+                <div>
+                    <p id="des2">Hoodie With Pouch Packet</p>
+                    <p>Mini/s</p>
+                </div>
+                <input type="number" placeholder="Quantity" id="q2" class="qub">
+                <p class="qub">75$</p>
+            </div>
+        </div>
+        <div class="border" style="width: 200px; padding-left: 30px;">
+            <h3>Summary</h3>
+            <div style="display: flex;">
+                <label>Subtotal</label>
+                <p class="pop" id="subt"></p>
+            </div>
+            <div style="display: flex;">
+                <label>Shipping</label>
+                <p class="pop">20$</p>
+            </div>
+            <div style="display: flex;">
+                <label>Total</label>
+                <p class="pop" id="tot"></p>
+            </div>
+            <button class="pop" onclick="getp()" style="background-color: black; color: white; cursor: pointer;">Check out</button>
+            <button class="pop" onclick="window.location.href='Home.html'" style="background-color: black; color: white; cursor: pointer;">To home</button>
+        </div>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>
